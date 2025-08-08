@@ -154,7 +154,7 @@ function showWish(idx) {
 }
 
 function celebrate() {
-  document.body.style.background = "url('https://i.imgur.com/3eD3Flz.jpg') center/cover no-repeat, linear-gradient(135deg, #fce4ec, #f8bbd9)";
+  
   document.getElementById("wishBox").style.display = "none";
   document.getElementById("celebration").style.display = "flex";
   document.getElementById("restartBtn").style.display = "inline-block";
