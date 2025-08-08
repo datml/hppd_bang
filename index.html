@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Ngọc Băng 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="overlay" id="wishOverlay"></div>
+<div class="popup-wish" id="popupWish">
+     <div class="continue-hint">Nhấn PHÍM CÁCH để tiếp tục</div>
+</div>
+<body>
+  <h1>🎂 Chúc Mừng Sinh Nhật Ngọc Băng 🎂</h1>
+  
+  <div id="instructions">
+    Sử dụng phím ← → hoặc A D để di chuyển đĩa hứng bánh sinh nhật!
+  </div>
+  
+  <div id="scoreBox">Bánh đã hứng: <span id="score">0</span>/<span id="totalCakes">8</span></div>
+  
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  
+  <button id="toggleMusicBtn" onclick="toggleMusic()">🎵 Tắt nhạc</button>
+  <button id="restartBtn" onclick="restartGame()">🔁 Chơi Lại</button>
+  
+  <div id="wishBox"></div>
+  
+  <div id="celebration">
+    <img src="bang.jpg" alt="Ngọc Băng" />
+    <h2>🎈🎉 Chúc mừng sinh nhật Ngọc Băng! 🎉🎈</h2>
+  </div>
+
+  <audio id="eatSound" preload="auto">
+    <source src="eat.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="bg-music.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script src="game.js"></script>
+</body>
+</html>
