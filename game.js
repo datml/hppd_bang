@@ -85,7 +85,7 @@ function drawCloud(x, y) {
 function updatePlate() {
   if (paused) {
     // Nếu game đang pause, ấn phím CÁCH sẽ tiếp tục game
-    if (keys[' ']) {  // Phím cách
+     if (keys['c']) { // Phím cách
       paused = false;
       document.getElementById("wishBox").style.display = "none";
     }
@@ -132,7 +132,7 @@ function showWish(idx) {
     const popup = document.getElementById("popupWish");
     const overlay = document.getElementById("wishOverlay");
     
-    popup.innerHTML = wishes[idx] + '<div class="continue-hint">Nhấn PHÍM CÁCH để tiếp tục</div>';
+    popup.innerHTML = wishes[idx] + '<div class="continue-hint">Nhấn PHÍM C để tiếp tục</div>';
     popup.style.display = "block";
     overlay.style.display = "block";
     
@@ -141,7 +141,7 @@ function showWish(idx) {
     
     // Xử lý khi ấn phím CÁCH để tiếp tục
     const continueHandler = (e) => {
-      if (e.key === ' ') {  // Chỉ kiểm tra phím cách
+      if (e.key === 'c') {  // Chỉ kiểm tra phím cách
         popup.style.display = "none";
         overlay.style.display = "none";
         paused = false;
